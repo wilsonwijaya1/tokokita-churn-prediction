@@ -1,0 +1,25 @@
+# Environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated data (regenerate with scripts/run_pipeline.py)
+data/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tokokita-churn"
+version = "1.0.0"
+description = "Leakage-safe churn prediction on a synthetic e-commerce dataset, with out-of-time evaluation, bootstrap CIs and retention net-benefit analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "numpy", "pandas", "scikit-learn", "xgboost", "lightgbm", "matplotlib",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
